@@ -11,6 +11,14 @@
 		AC8235F92C0E0F2700887006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8235F82C0E0F2700887006 /* ContentView.swift */; };
 		AC8235FB2C0E0F2800887006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8235FA2C0E0F2800887006 /* Assets.xcassets */; };
 		AC8235FE2C0E0F2800887006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8235FD2C0E0F2800887006 /* Preview Assets.xcassets */; };
+		AC8236072C0E603900887006 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8236062C0E603900887006 /* DashboardView.swift */; };
+		AC8236092C0F8AFF00887006 /* AccountInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8236082C0F8AFF00887006 /* AccountInfoView.swift */; };
+		AC8236382C11F80E00887006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8236372C11F80E00887006 /* SettingsView.swift */; };
+		AC82363D2C11FA3900887006 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82363C2C11FA3900887006 /* DocumentsView.swift */; };
+		AC82363F2C11FA3F00887006 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82363E2C11FA3F00887006 /* MessagesView.swift */; };
+		AC8236432C11FA5B00887006 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8236422C11FA5B00887006 /* ContactView.swift */; };
+		AC8236452C11FA7D00887006 /* SecurityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8236442C11FA7D00887006 /* SecurityView.swift */; };
+		AC8236472C11FAA500887006 /* MyInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8236462C11FAA500887006 /* MyInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		AC8235F82C0E0F2700887006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC8235FA2C0E0F2800887006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC8235FD2C0E0F2800887006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC8236062C0E603900887006 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		AC8236082C0F8AFF00887006 /* AccountInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoView.swift; sourceTree = "<group>"; };
+		AC8236372C11F80E00887006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AC82363C2C11FA3900887006 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
+		AC82363E2C11FA3F00887006 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		AC8236422C11FA5B00887006 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		AC8236442C11FA7D00887006 /* SecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityView.swift; sourceTree = "<group>"; };
+		AC8236462C11FAA500887006 /* MyInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,10 @@
 			children = (
 				AC8235F62C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift */,
 				AC8235F82C0E0F2700887006 /* ContentView.swift */,
+				AC8236062C0E603900887006 /* DashboardView.swift */,
+				AC8236082C0F8AFF00887006 /* AccountInfoView.swift */,
+				AC8236372C11F80E00887006 /* SettingsView.swift */,
+				AC8236392C11FA1B00887006 /* SettingsTab */,
 				AC8235FA2C0E0F2800887006 /* Assets.xcassets */,
 				AC8235FC2C0E0F2800887006 /* Preview Content */,
 			);
@@ -65,6 +85,18 @@
 				AC8235FD2C0E0F2800887006 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC8236392C11FA1B00887006 /* SettingsTab */ = {
+			isa = PBXGroup;
+			children = (
+				AC82363C2C11FA3900887006 /* DocumentsView.swift */,
+				AC82363E2C11FA3F00887006 /* MessagesView.swift */,
+				AC8236422C11FA5B00887006 /* ContactView.swift */,
+				AC8236442C11FA7D00887006 /* SecurityView.swift */,
+				AC8236462C11FAA500887006 /* MyInformationView.swift */,
+			);
+			path = SettingsTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC82363F2C11FA3F00887006 /* MessagesView.swift in Sources */,
+				AC8236382C11F80E00887006 /* SettingsView.swift in Sources */,
+				AC8236432C11FA5B00887006 /* ContactView.swift in Sources */,
+				AC8236092C0F8AFF00887006 /* AccountInfoView.swift in Sources */,
 				AC8235F92C0E0F2700887006 /* ContentView.swift in Sources */,
+				AC8236472C11FAA500887006 /* MyInformationView.swift in Sources */,
+				AC82363D2C11FA3900887006 /* DocumentsView.swift in Sources */,
+				AC8236072C0E603900887006 /* DashboardView.swift in Sources */,
+				AC8236452C11FA7D00887006 /* SecurityView.swift in Sources */,
 				AC8235F72C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +320,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +350,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
