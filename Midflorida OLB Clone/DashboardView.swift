@@ -45,12 +45,12 @@ struct DashboardView: View {
                     }
                     Spacer()
                     Button(action: {
-                        //TODO STUFF
+                        //TODO: STUFF
                     }) {
                         Image(systemName: "message")
                     }
                     Button(action: {
-                        //TODO STUFF
+                        //TODO: STUFF
                         showSettings.toggle()
                     }) {
                         Image(systemName: "gear ")

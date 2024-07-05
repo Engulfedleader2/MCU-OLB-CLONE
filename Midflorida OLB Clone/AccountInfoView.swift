@@ -40,7 +40,7 @@ struct AccountInfoView: View {
                     .foregroundColor(.gray)
                     .padding(.top, -5) // Adjust to move up
                 
-                Spacer().frame(height: 10) // Add some space between account details and amount
+                Spacer().frame(height: 10) 
                 
                 HStack {
                     Spacer()
@@ -53,7 +53,7 @@ struct AccountInfoView: View {
                             .font(.footnote)
                             .foregroundColor(.gray)
                     }
-                    .padding(.trailing) // Add padding to the right side
+                    .padding(.trailing)
                 }
             }
             .padding([.horizontal, .bottom])
@@ -62,7 +62,7 @@ struct AccountInfoView: View {
         .cornerRadius(10)
         .shadow(radius: 2)
         .padding(.horizontal)
-        .frame(minHeight: 150)  // Ensure minimum height
+        .frame(minHeight: 150)
     }
 }
 
