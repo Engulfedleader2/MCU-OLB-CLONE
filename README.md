@@ -1,0 +1,1 @@
+This is a online banking app clone using MidFlorida credit union as my source of inspiration. This is a non functional app only using swift UI and not related data will correspond with with account details
