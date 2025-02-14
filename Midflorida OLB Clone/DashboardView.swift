@@ -5,20 +5,6 @@
 //  Created by Israel on 6/3/24.
 //
 
-//
-//  DashboardView.swift
-//  Midflorida OLB Clone
-//
-//  Created by Israel on 6/3/24.
-//
-
-//
-//  DashboardView.swift
-//  Midflorida OLB Clone
-//
-//  Created by Israel on 6/3/24.
-//
-
 import SwiftUI
 
 struct DashboardView: View {

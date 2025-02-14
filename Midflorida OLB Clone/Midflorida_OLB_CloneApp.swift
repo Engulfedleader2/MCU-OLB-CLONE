@@ -11,7 +11,7 @@ import SwiftUI
 struct Midflorida_OLB_CloneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ModernDashboardView()
         }
     }
 }

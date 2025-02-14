@@ -16,12 +16,12 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+
             // Background Image
             Image("background") // Replace with the name of your image asset
                 .resizable()
-               // .aspectRatio(contentMode: .fill) // Fill the entire available space
                 .edgesIgnoringSafeArea(.all)
-
+            
             VStack {
                 Spacer().frame(height: 40)
                 
@@ -29,14 +29,15 @@ struct ContentView: View {
                 Image("Logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 300, height: 100)
-                    .padding(.top, 40)
+                    .frame(width: 280, height: 90) // Slightly smaller for proportion
+                    .padding(.top, 30) // Reduced padding to bring it closer
                 
-                Spacer().frame(height: 30)
+                
+                Spacer().frame(height: 20)
                 
                 // ScrollView to allow scrolling if needed
                 ScrollView {
-                    VStack(spacing: 16) {
+                    VStack(spacing: 14) {
                         // Login text field
                         TextField("Login ID", text: $loginID)
                             .padding()
@@ -45,7 +46,7 @@ struct ContentView: View {
                             .padding(.horizontal)
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
-
+                        
                         
                         // Password text field
                         SecureField("Password", text: $password)
@@ -53,6 +54,8 @@ struct ContentView: View {
                             .background(Color.white)
                             .cornerRadius(8)
                             .padding(.horizontal)
+                        
+                        Spacer().frame(height: 8) // Added spacing before the toggle
                         
                         // Remember me toggle
                         Toggle(isOn: $rememberMe) {
@@ -69,105 +72,94 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .border(Color.black)
                                 .background(Color.blue)
                                 .cornerRadius(8)
                                 .padding(.horizontal)
-                                
+                                .shadow(radius: 2)
+                            
                         }
                         
                         // Face ID login button and forgot buttons
                         HStack {
-                            Button(action: {
-                                // Forgot Login ID action here
-                            }) {
+                            Button(action: {}) {
                                 Text("Forgot Login ID?")
                                     .foregroundColor(.white)
                                     .font(.subheadline)
                             }
                             Spacer()
-                            Button(action: {
-                                // Forgot Password action here
-                            }) {
+                            Button(action: {}) {
                                 Text("Forgot Password?")
                                     .foregroundColor(.white)
                                     .font(.subheadline)
                             }
                             Spacer()
-                            Button(action: {
-                                // Face ID login action here
-                            }) {
+                            Button(action: {}) {
                                 Image(systemName: "faceid")
                                     .resizable()
                                     .foregroundColor(.white)
                                     .scaledToFit()
                                     .frame(width: 30, height: 30)
+                                    .padding(8) // Slight padding for better tap area
+                                    .background(Color.white.opacity(0.2)) // Subtle background
+                                    .clipShape(Circle()) // Rounded background
                             }
                         }
                         .padding(.horizontal)
                     }
                 }
+                Spacer(minLength: 10) // Less spacing to bring footer elements closer
                 
-
                 // Contact us, location, signup
                 HStack {
-                    Spacer() // Pushes the first button to the left edge
-                    
-                    Button(action: {
-                        // Contact us action here
-                    }) {
+                    Spacer()
+                    Button(action: {}) {
                         Text("Contact Us")
                             .foregroundColor(.white)
                     }
-                    
-                    Spacer() // Spacing between the first and second button
-                    
-                    Button(action: {
-                        // Location action
-                    }) {
+                    Spacer()
+                    Button(action: {}) {
                         Text("Location")
                             .foregroundColor(.white)
                     }
-                    
-                    Spacer() // Spacing between the second and third button
-                    
-                    Button(action: {
-                        // Sign up
-                    }) {
+                    Spacer()
+                    Button(action: {}) {
                         Text("Sign Up")
                             .foregroundColor(.white)
                     }
-                    
-                    Spacer() // Pushes the last button to the right edge
+                    Spacer()
                 }
-                .padding(.bottom, 20)
+                .padding(.bottom, 15)
                 
-                // Website name and privacy policy
-                VStack {
-                    Button(action: {
-                        // Midflorida link
-                    }) {
-                        Text("midflorida.com")
-                            .font(.footnote)
-                            .foregroundColor(.white)
-                            .underline()
-                            .padding(.horizontal)
+                // Footer section with better alignment
+                VStack(spacing: 5) { // Tightened spacing
+                    HStack {
+                        Button(action: {}) {
+                            Text("midflorida.com")
+                                .font(.footnote)
+                                .foregroundColor(.white)
+                                .underline()
+                        }
+                        Spacer(minLength: 20)
+                        Button(action: {}) {
+                            Text("Privacy Policy")
+                                .font(.footnote)
+                                .foregroundColor(.white)
+                                .underline()
+                        }
                     }
-                    Text("2024 MIDFLORIDA Credit Union")
+                    .frame(maxWidth: 300) // Keeps it compact
+                    .padding(.bottom, 5)
+                    
+                    // Copyright text centered below
+                    Text("© 2024 MIDFLORIDA Credit Union")
                         .font(.footnote)
-                    Button(action: {
-                        // Privacy policy link
-                    }) {
-                        Text("Privacy Policy")
-                            .font(.footnote)
-                            .foregroundColor(.white)
-                            .underline()
-                    }
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.bottom, 20)
+                .padding(.bottom, 15) // Final spacing adjustment
             }
-            .padding(.top, 20) // Adjust top padding to avoid clipping
+            .padding(.top, 10)
         }
     }
 }

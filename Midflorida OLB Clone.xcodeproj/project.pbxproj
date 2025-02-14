@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1282582D5BC69000FDB691 /* ModernDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1282572D5BC69000FDB691 /* ModernDashboardView.swift */; };
+		AC12825C2D5BCBB600FDB691 /* AccountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12825B2D5BCBB600FDB691 /* AccountCardView.swift */; };
 		AC8235F72C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8235F62C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift */; };
 		AC8235F92C0E0F2700887006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8235F82C0E0F2700887006 /* ContentView.swift */; };
 		AC8235FB2C0E0F2800887006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8235FA2C0E0F2800887006 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC1282572D5BC69000FDB691 /* ModernDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernDashboardView.swift; sourceTree = "<group>"; };
+		AC12825B2D5BCBB600FDB691 /* AccountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCardView.swift; sourceTree = "<group>"; };
 		AC8235F32C0E0F2700887006 /* Midflorida OLB Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Midflorida OLB Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8235F62C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midflorida_OLB_CloneApp.swift; sourceTree = "<group>"; };
 		AC8235F82C0E0F2700887006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 			children = (
 				AC8235F62C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift */,
 				AC8235F82C0E0F2700887006 /* ContentView.swift */,
+				AC1282572D5BC69000FDB691 /* ModernDashboardView.swift */,
+				AC12825B2D5BCBB600FDB691 /* AccountCardView.swift */,
 				AC8236062C0E603900887006 /* DashboardView.swift */,
 				AC8236082C0F8AFF00887006 /* AccountInfoView.swift */,
 				AC8236372C11F80E00887006 /* SettingsView.swift */,
@@ -175,9 +181,11 @@
 				AC8236092C0F8AFF00887006 /* AccountInfoView.swift in Sources */,
 				AC8235F92C0E0F2700887006 /* ContentView.swift in Sources */,
 				AC8236472C11FAA500887006 /* MyInformationView.swift in Sources */,
+				AC1282582D5BC69000FDB691 /* ModernDashboardView.swift in Sources */,
 				AC82363D2C11FA3900887006 /* DocumentsView.swift in Sources */,
 				AC8236072C0E603900887006 /* DashboardView.swift in Sources */,
 				AC8236452C11FA7D00887006 /* SecurityView.swift in Sources */,
+				AC12825C2D5BCBB600FDB691 /* AccountCardView.swift in Sources */,
 				AC8235F72C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
