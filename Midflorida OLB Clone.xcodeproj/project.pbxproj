@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71B6221C2F43D5DD00B3336B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B6221B2F43D5DD00B3336B /* MainTabView.swift */; };
 		AC1282582D5BC69000FDB691 /* ModernDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1282572D5BC69000FDB691 /* ModernDashboardView.swift */; };
 		AC12825C2D5BCBB600FDB691 /* AccountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12825B2D5BCBB600FDB691 /* AccountCardView.swift */; };
 		AC8235F72C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8235F62C0E0F2700887006 /* Midflorida_OLB_CloneApp.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71B6221B2F43D5DD00B3336B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		AC1282572D5BC69000FDB691 /* ModernDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernDashboardView.swift; sourceTree = "<group>"; };
 		AC12825B2D5BCBB600FDB691 /* AccountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCardView.swift; sourceTree = "<group>"; };
 		AC8235F32C0E0F2700887006 /* Midflorida OLB Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Midflorida OLB Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 				AC8236392C11FA1B00887006 /* SettingsTab */,
 				AC8235FA2C0E0F2800887006 /* Assets.xcassets */,
 				AC8235FC2C0E0F2800887006 /* Preview Content */,
+				71B6221B2F43D5DD00B3336B /* MainTabView.swift */,
 			);
 			path = "Midflorida OLB Clone";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				AC8235F92C0E0F2700887006 /* ContentView.swift in Sources */,
 				AC8236472C11FAA500887006 /* MyInformationView.swift in Sources */,
 				AC1282582D5BC69000FDB691 /* ModernDashboardView.swift in Sources */,
+				71B6221C2F43D5DD00B3336B /* MainTabView.swift in Sources */,
 				AC82363D2C11FA3900887006 /* DocumentsView.swift in Sources */,
 				AC8236072C0E603900887006 /* DashboardView.swift in Sources */,
 				AC8236452C11FA7D00887006 /* SecurityView.swift in Sources */,
